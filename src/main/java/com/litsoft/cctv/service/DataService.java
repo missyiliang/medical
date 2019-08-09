@@ -11,4 +11,8 @@ import java.util.List;
  **/
 public interface DataService {
     public AjaxResult findAll();
+
+    public AbcTest findone();
+
+    public List<AbcTest> findList();
 }

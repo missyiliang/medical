@@ -22,4 +22,15 @@ public class DataServiceImpl implements DataService {
     public AjaxResult findAll() {
         return new AjaxResult(abcTestMapper.queryList());
     }
+
+    @Override
+    public AbcTest findone() {
+        return abcTestMapper.queryList().get(0);
+    }
+
+    @Override
+    public List<AbcTest> findList() {
+        return abcTestMapper.queryList();
+    }
+
 }
